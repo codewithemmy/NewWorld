@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width">
+        <title>New World</title>
+        <link rel="shortcurt icon" href="../images/download.png">
+        <link rel="stylesheet" href="../style.css">
+   </head>
+<body>
+    <header class="fixed-bar">
+        <h1 class="page-title">New World</h1>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <main class="main-form">
+        <div class="form-header">
+            <p>Kindly fill the form for your TRIP</p>
+        </div>
+        <div class="form">
+            <form onsubmit="return validate()" action="message.html" method="post" class="form">
+            <input type="text" id="uname" placeholder="Username" oninput="checkInput()" required/><br><br>
+            <input type="email" id="email" placeholder="email" oninput="checkInput()" required/><br><br>
+            <input type="text" name="address" id="address" placeholder="Residential Address" required/><br><br>
+            <input type="password" id="pass" placeholder="password" required/><br><br>
+            <label>What kind of trip do you want?</label><br>
+            <textarea name="" id="message" cols="30" rows="10" oninput="checkInput()"></textarea><br>
+            <button type="submit" class="the-button">submit</button>
+            </form>
+        </div>
+        </main>
+        <script src="main.js"></script>
+</body>
+</html>
